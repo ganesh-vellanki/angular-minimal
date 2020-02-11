@@ -12,7 +12,8 @@
         },
       },
       rxjs: {
-        defaultExtension: 'js'
+        defaultExtension: 'js',
+        main: 'bundles/rxjs.umd.min.js',
       }
     },
     paths: {
@@ -36,7 +37,8 @@
 
       // other libraries
       'rxjs':                      'npm:rxjs',
-      'angular-in-memory-web-api': 'npm:angular-in-memory-web-api/bundles/in-memory-web-api.umd.js'
+      'angular-in-memory-web-api': 'npm:angular-in-memory-web-api/bundles/in-memory-web-api.umd.js',
+      'rxjs/operators': 'npm:rxjs/operators/index.js'
     }
   });
 })(this);
