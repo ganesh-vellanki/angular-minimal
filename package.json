@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "QuickStart package.json from the documentation, supplemented with testing support",
   "scripts": {
-    "build": "tsc -p src/",
-    "build:watch": "tsc -p src/ -w",
+    "build": "tsc",
+    "build:watch": "tsc -w",
     "serve": "lite-server",
     "prestart": "npm run build",
     "start": "concurrently \"npm run build:watch\" \"npm run serve\"",
